@@ -100,24 +100,26 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">
-                        <h2 style="color: white;" >About Me</h2>
-                        <p style="color: whitesmoke;"> Hello, my name is Joonsung Byun, and I am pursuing a bachelor's degree in Web Design and
+                        <h2 style="color: white;" id="aboutH2" data-id="aboutH2">About Me</h2>
+                        <p style="color: whitesmoke;" id="aboutP1" data-id="aboutP1"> Hello, my name is Joonsung Byun, and I am pursuing a bachelor's degree in Web Design and
                             Development at Utah Valley University. I have a deep passion for the intersection of web
                             technology and creativity, which drives both my educational and career aspirations. I’m
                             highly motivated by the desire to create modern, effective web applications, and I take
                             pride in my strong skills in web development.</p>
-                        <p style="color: whitesmoke;">In addition to my studies, I work as an Academic Tutor at UVU, where I assist fellow students
+                        <p style="color: whitesmoke;" id="aboutP2" data-id="aboutP2">In addition to my studies, I work as an Academic Tutor at UVU, where I assist fellow students
                             with their web development challenges. This role has not only allowed me to strengthen my
                             own expertise but also share my knowledge and help others succeed in their web development
                             journeys.</p>
+                            <div class="resumeBtnContainer">
+                                <a href="Resume-Joonsung-Byun.pdf" class="sim-btn"  download><span>Download
+                                    Resume</span></a>
+                            </div>
 
-                        <a href="Resume-Joonsung-Byun.pdf" class="sim-btn" style="background-color: antiquewhite; padding: 10px 20px ; border-radius: 10px;" download><span>Download
-                                Resume</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 <div class="col-md-6">
-                    <div class="right-box-pro wow fadeIn">
+                    <div class="right-box-pro wow fadeIn" id="aboutimg" data-id="aboutimg">
                         <img src="uploads/newMyImage.jpg" alt="" class="img-fluid img-rounded">
                     </div><!-- end media -->
                 </div><!-- end col -->
@@ -127,11 +129,11 @@
 
     <div id="services" class="section lb" style="background-color: black;">
         <div class="container">
-            <div class="section-title text-left">
-                <h3 style="color: white;">Skills</h3>
+            <div class="section-title text-left message-box">
+                <h2 style="color: white;" id="skillsH2" data-id="skillsH2">Skills</h2>
             </div>
 
-            <div id="skillContainer" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: baseline; gap: 25px; max-width: 960px; margin: auto; " >
+            <div id="skillContainer" style="display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: baseline; gap: 25px; max-width: 960px; margin: auto; " data-id="skillContainer" >
 
                 <div class=""
                     style="display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 5px; border-radius: 10px; padding: 8px;">
@@ -224,16 +226,16 @@
 
     <div id="portfolio" class="section lb" style="background-color: rgb(3, 3, 27);">
         <div class="container">
-            <div class="section-title text-left">
-                <h3 style="color: white;">Projects</h3>
+            <div class="section-title text-left message-box">
+                <h2 style="color: white;" id="projectsH2" data-id="projectsH2">Projects</h3>
                 <p style="color: whitesmoke;">Check out my awesome projects below</p>
                 </p>
             </div><!-- end title -->
             <div style="display: flex; flex-direction: column; gap: 40px;">
                 <!--각 each project-->
-                <section class="eachSection">
+                <section class="eachSection" id="project1" data-id="project1">
                     <div >
-                        <img  src="uploads/sveltekitThumbnail.png"/>
+                        <a href="https://joon-sveltekit-app.vercel.app/" target="_blank"><img  src="uploads/sveltekitThumbnail.png"/></a>   
                     </div>
                     <article >
                         <h3 style="color: white;">SvelteKit Tutorial with LLM Ollama chatbot</h3>
@@ -252,9 +254,9 @@
                     </article>
                 </section>
 
-                <section class="eachSection">
+                <section class="eachSection" id="project2" data-id="project2">
                     <div>
-                        <img src="uploads/nodetrip_thumbnail.png"/>
+                        <a href="https://numerous-marmoset-joonsungbyun-63fac5da.koyeb.app/" target="_blank"><img src="uploads/nodetrip_thumbnail.png"/></a>
                     </div>
                     <article>
                         <h3 style="color: white;">Trip Blog with AI Trip Planner</h3>
@@ -269,15 +271,15 @@
                             <li>GPT-4o-mini</li>
                         </ul>
                         <div class="btnContainer">
-                                <a href="https://numerous-marmoset-joonsungbyun-63fac5da.koyeb.app/recommendation" class="link" target="_blank">View Site</a>         
+                                <a href="https://numerous-marmoset-joonsungbyun-63fac5da.koyeb.app/" target="_blank" class="link" >View Site</a>         
                                 <a href="https://medium.com/@gmmicky1026/node-js-express-js-trip-blog-with-gpt-4o-mini-api-e9b7c89b215d" class="link" target="_blank">View Case Study</a>
                             </div>
                     </article>
                 </section>
 
-                <section class="eachSection">
+                <section class="eachSection" id="project3" data-id="project3">
                     <div>
-                        <img src="uploads/radianceThumbnail.png"/>
+                        <a href="https://radiancejoonsung.netlify.app/" target="_blank"><img src="uploads/radianceThumbnail.png"/></a>
                     </div>
                     <article>
                         <h3 style="color: white;">Cosmetics E-commerce</h3>
@@ -294,9 +296,9 @@
                     </article>
                 </section>
 
-                <section class="eachSection">
+                <section class="eachSection" id="project4" data-id="project4">
                     <div>
-                        <img src="uploads/aianalysis.png"/>
+                    <a href="https://ai-image-analysis-joon.netlify.app/" target="blank"><img src="uploads/aianalysis.png"/></a>    
                     </div>
                     <article>
                         <h3 style="color: white;">Cloning Unsplash with AI Image Analysis</h3>
@@ -314,9 +316,9 @@
                 </section>
 
                 
-                <section class="eachSection">
+                <section class="eachSection" id="project5" data-id="project5">
                     <div>
-                        <img src="https://zircon-shrine-0e3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fac033efe-b96f-4fd2-8a41-4cc95d497ca1%2F2b4f3d97-e4df-4480-8de2-30a5eccd723d%2Fcdaab38d-2e1e-4520-9d8a-41b5ab282e85.png?table=block&id=ba677ddf-f0f0-42ef-a6f6-d9a9fd73141c&spaceId=ac033efe-b96f-4fd2-8a41-4cc95d497ca1&width=970&userId=&cache=v2"/>
+                        <a href="https://medium.com/@gmmicky1026/easy-explanation-about-vite-8a6493731fc4" target="_blank"> <img src="https://zircon-shrine-0e3.notion.site/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fac033efe-b96f-4fd2-8a41-4cc95d497ca1%2F2b4f3d97-e4df-4480-8de2-30a5eccd723d%2Fcdaab38d-2e1e-4520-9d8a-41b5ab282e85.png?table=block&id=ba677ddf-f0f0-42ef-a6f6-d9a9fd73141c&spaceId=ac033efe-b96f-4fd2-8a41-4cc95d497ca1&width=970&userId=&cache=v2"/></a>  
                     </div>
                     <article>
                         <h3 style="color: white;">Practical Knowledge, Easy Explanation about Vite</h3>
@@ -329,9 +331,9 @@
                     </article>
                 </section>
                                 
-                <section class="eachSection">
+                <section class="eachSection" id="project6" data-id="project6">
                     <div>
-                        <img src="uploads/webp.png"/>
+                        <a href="https://medium.com/@gmmicky1026/why-webp-files-are-the-optimal-image-format-for-the-web-8531bff6406f" target="_blank"> <img src="uploads/webp.png"/></a>  
                     </div>
                     <article>
                         <h3 style="color: white;">Practical Knowledge, Pros of WebP format</h3>
@@ -544,6 +546,7 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+    <script src="myjs.js"></script>
 
 </body>
 

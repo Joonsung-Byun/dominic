@@ -542,7 +542,6 @@ xclip
 .section-title {
     display: block;
     position: relative;
-    margin-bottom: 60px;
 }
 
 .section-title p {
@@ -583,7 +582,7 @@ xclip
 	display: inline-block;
 }
 
-.sim-btn{
+/* .sim-btn{
 	line-height: 50px;
 	height: 50px;
 	text-align: center;
@@ -591,7 +590,7 @@ xclip
 	margin-left: auto;
 	margin-top: 0px;
 	cursor: pointer;
-}
+} */
 
 .btn-hover-new::after {
     content: attr(data-text);
@@ -2407,6 +2406,7 @@ select.mobile-device {
 
 .skills {
     display: flex;
+    flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 14px;
 }
@@ -2492,7 +2492,7 @@ select.mobile-device {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
-    background-color: rgb(147, 190, 255);
+    background-color: antiquewhite; 
     border-radius: 9px;
     padding: 5px 10px;
     margin-right: 10px;
@@ -2511,7 +2511,86 @@ select.mobile-device {
     background-color: #333333;
 }
 
-@media (max-width: 991px) {
+.resumeBtnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sim-btn{
+    background-color: antiquewhite; 
+    padding: 10px 20px; 
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+#aboutH2 {
+    transform: translateY(-100%);
+}
+
+#aboutP1 {
+    transform: translateX(-20%);
+}
+
+#aboutP2 {
+    transform: translateX(-20%);
+}
+#aboutimg {
+    transform: translateX(20%);
+}
+
+#skillsH2 {
+    transform: translateY(-100%);
+}
+
+#skillContainer {
+    transform: translateX(-20%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .resumeBtnContainer {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .eachSection {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .eachSection img {
+        width: 70%;
+        height: auto;
+        display: block;
+        border: 2px solid rgb(199, 202, 0);
+        margin: 0 auto;
+    }
+}
+
+@media (min-width: 501px) and (max-width: 991px) {
     .eachSection {
         display: flex;
         gap: 20px;
@@ -2523,7 +2602,7 @@ select.mobile-device {
     }
 
     .eachSection img {
-        width: 50%;
+        width: 60%;
         height: auto;
         display: block;
         border: 2px solid rgb(199, 202, 0);
@@ -2555,9 +2634,15 @@ select.mobile-device {
         flex-basis: 75%;
     }
 
+
+
     .btnContainer {
         display: flex;
         justify-content: end;
         gap: 10px;
     }
+}
+
+.eachSection article p {
+    color: #cecece;
 }
