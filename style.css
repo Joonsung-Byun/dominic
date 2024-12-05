@@ -2408,6 +2408,7 @@ select.mobile-device {
 .skills {
     display: flex;
     gap: 10px;
+    margin-bottom: 14px;
 }
 
 .skills li {
@@ -2488,7 +2489,7 @@ select.mobile-device {
 
 .link {
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 400;
     background-color: rgb(147, 190, 255);
