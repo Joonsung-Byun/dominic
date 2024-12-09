@@ -19,6 +19,9 @@ const target15 = document.querySelector('#experience1');
 const target16 = document.querySelector('#experience2');
 const target17 = document.querySelector('#experience3');
 
+const target18 = document.querySelector('#contactContainer');
+const target19 = document.querySelector('#contactH2');
+
 
 
 const objOptions = {
@@ -83,6 +86,14 @@ if (target16) {
 if (target17) {
     sectionObserver.observe(target17);
 }
+if (target18) {
+    sectionObserver.observe(target18);
+}
+
+if(target19){
+    sectionObserver.observe(target19);
+}
+
 
 
 
@@ -90,7 +101,7 @@ if (target17) {
 function callBackFunction(entries){
     entries.forEach(entry => {
 
-        if(entry.target.dataset.id === "aboutH2" || entry.target.dataset.id === "skillsH2" || entry.target.dataset.id === "projectsH2" || entry.target.dataset.id === "experienceH2"){
+        if(entry.target.dataset.id === "aboutH2" || entry.target.dataset.id === "skillsH2" || entry.target.dataset.id === "projectsH2" || entry.target.dataset.id === "experienceH2"|| entry.target.dataset.id === "contactH2"){
             if(entry.isIntersecting){
                 // transform 0
                 entry.target.style.transform = 'translateY(0)';
@@ -108,7 +119,7 @@ function callBackFunction(entries){
             }
         }
 
-        if(entry.target.dataset.id === "aboutP1" || entry.target.dataset.id === "skillContainer" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3" ){
+        if(entry.target.dataset.id === "aboutP1" || entry.target.dataset.id === "skillContainer" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3" || entry.target.dataset.id === "contactContainer"){
             if(entry.isIntersecting){
                 console.log(entry.target)
                 // transform 0

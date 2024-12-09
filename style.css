@@ -2533,7 +2533,15 @@ select.mobile-device {
     transform: translateY(-100%);
 }
 
+#contactContainer {
+    transform: translateX(-20%);
+}
+
 #experienceH2 {
+    transform: translateY(-100%);
+}
+
+#contactH2 {
     transform: translateY(-100%);
 }
 
@@ -2716,13 +2724,6 @@ select.mobile-device {
 
 
 
-
-
-
-
-
-
-
 @media (min-width: 768px) {
     
     #contactContainer {
@@ -2736,9 +2737,6 @@ select.mobile-device {
         }
     }
 }
-
-
-
 
 
 
