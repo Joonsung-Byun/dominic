@@ -2088,7 +2088,7 @@ select.mobile-device {
 }
 
 #contact {
-    background: url(images/bg.png) no-repeat center center #333333;
+    background: black;
 }
 
 
@@ -2533,7 +2533,23 @@ select.mobile-device {
     transform: translateY(-100%);
 }
 
+#experienceH2 {
+    transform: translateY(-100%);
+}
+
 #aboutP1 {
+    transform: translateX(-20%);
+}
+
+#experience1 {
+    transform: translateX(-20%);
+}
+
+#experience2 {
+    transform: translateX(20%);
+}
+
+#experience3 {
     transform: translateX(-20%);
 }
 
@@ -2707,7 +2723,19 @@ select.mobile-device {
 
 
 
-
+@media (min-width: 768px) {
+    
+    #contactContainer {
+        gap: 25px;
+        a{
+            display: block;
+        }
+        a img {
+            width: 70px;
+            height: 70px;
+        }
+    }
+}
 
 
 
@@ -2793,4 +2821,38 @@ select.mobile-device {
 
 .eachSection article p {
     color: #cecece;
+}
+
+#experiences h2 {
+    
+    margin-bottom: 20px;
+}
+
+.eachWorkSection {
+    margin-bottom: 40px;
+    h2 {
+        margin: 0;
+        padding: 0;
+    }
+    .workInfo {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-bottom: 10px;
+        li {
+            padding: 5px 9px;
+            background-color: rgb(37, 37, 37);
+            border-radius: 3px;
+            color: rgb(255, 255, 255);
+            font-size: 12px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .workSummary {
+        li {
+            color: #e4e4e4;
+            margin-bottom: 8px;
+        }
+    }
 }
