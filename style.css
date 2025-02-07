@@ -2784,7 +2784,7 @@ select.mobile-device {
     }
 }
 
-@media (min-width: 992px) and (max-width: 2000px) {
+@media (min-width: 992px) and (max-width: 6000px) {
     .eachSection {
         display: flex;
         flex-direction: row;
@@ -2842,7 +2842,7 @@ select.mobile-device {
             background-color: rgb(37, 37, 37);
             border-radius: 3px;
             color: rgb(255, 255, 255);
-            font-size: 12px;
+            font-size: 14px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
         }
     }

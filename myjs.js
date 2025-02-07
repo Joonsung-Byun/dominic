@@ -18,6 +18,7 @@ const target14 = document.querySelector('#experienceH2');
 const target15 = document.querySelector('#experience1');
 const target16 = document.querySelector('#experience2');
 const target17 = document.querySelector('#experience3');
+const target20 = document.querySelector('#experience0');
 
 const target18 = document.querySelector('#contactContainer');
 const target19 = document.querySelector('#contactH2');
@@ -94,6 +95,9 @@ if(target19){
     sectionObserver.observe(target19);
 }
 
+if(target20){
+    sectionObserver.observe(target20);
+}
 
 
 
@@ -119,7 +123,7 @@ function callBackFunction(entries){
             }
         }
 
-        if(entry.target.dataset.id === "aboutP1" || entry.target.dataset.id === "skillContainer" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3" || entry.target.dataset.id === "contactContainer"){
+        if(entry.target.dataset.id === "aboutP1" || entry.target.dataset.id === "skillContainer" || entry.target.dataset.id === "experience0" || entry.target.dataset.id === "experience2" || entry.target.dataset.id === "contactContainer"){
             if(entry.isIntersecting){
                 console.log(entry.target)
                 // transform 0
@@ -139,7 +143,7 @@ function callBackFunction(entries){
         }
 
 
-        if(entry.target.dataset.id === "aboutP2" || entry.target.dataset.id === "project1" || entry.target.dataset.id === "project3" || entry.target.dataset.id === "project5"){
+        if(entry.target.dataset.id === "aboutP2" || entry.target.dataset.id === "project0" || entry.target.dataset.id === "project3" || entry.target.dataset.id === "project5"){
             if(entry.isIntersecting){
                 // transform 0
                 entry.target.style.transform = 'translateX(0)';
@@ -158,7 +162,7 @@ function callBackFunction(entries){
         }
 
         // project 짝수들만
-        if(entry.target.dataset.id === "aboutimg"  || entry.target.dataset.id === "project2" || entry.target.dataset.id === "project4" || entry.target.dataset.id === "project6" || entry.target.dataset.id === "experience2"){
+        if(entry.target.dataset.id === "aboutimg"  || entry.target.dataset.id === "project2" || entry.target.dataset.id === "project4" || entry.target.dataset.id === "project6" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3"){
             if(entry.isIntersecting){
                 // transform 0
                 entry.target.style.transform = 'translateX(0)';
