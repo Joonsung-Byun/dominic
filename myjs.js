@@ -6,6 +6,8 @@ const target5 = document.querySelector('#skillsH2');
 const target6 = document.querySelector('#skillContainer');
 const target7 = document.querySelector('#projectsH2');
 
+
+const target0 = document.querySelector('#project0');
 const target8 = document.querySelector('#project1');
 const target9 = document.querySelector('#project2');
 const target10 = document.querySelector('#project3');
@@ -54,6 +56,11 @@ if (target6) {
 if (target7) {
     sectionObserver.observe(target7);
 }
+
+if (target0) {
+    sectionObserver.observe(target0);
+}
+
 if (target8) {
     sectionObserver.observe(target8);
 }
@@ -143,7 +150,7 @@ function callBackFunction(entries){
         }
 
 
-        if(entry.target.dataset.id === "aboutP2" || entry.target.dataset.id === "project0" || entry.target.dataset.id === "project3" || entry.target.dataset.id === "project5"){
+        if(entry.target.dataset.id === "aboutP2" || entry.target.dataset.id === "project1" || entry.target.dataset.id === "project3" || entry.target.dataset.id === "project5"){
             if(entry.isIntersecting){
                 // transform 0
                 entry.target.style.transform = 'translateX(0)';
@@ -162,7 +169,7 @@ function callBackFunction(entries){
         }
 
         // project 짝수들만
-        if(entry.target.dataset.id === "aboutimg"  || entry.target.dataset.id === "project2" || entry.target.dataset.id === "project4" || entry.target.dataset.id === "project6" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3"){
+        if(entry.target.dataset.id === "aboutimg"  ||entry.target.dataset.id === "project0" || entry.target.dataset.id === "project2" || entry.target.dataset.id === "project4" || entry.target.dataset.id === "project6" || entry.target.dataset.id === "experience1" || entry.target.dataset.id === "experience3"){
             if(entry.isIntersecting){
                 // transform 0
                 entry.target.style.transform = 'translateX(0)';
