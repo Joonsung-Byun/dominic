@@ -166,6 +166,7 @@ function callBackFunction(entries){
                 //duration
                 entry.target.style.transition = 'transform 1s, opacity 2s';
             }
+            
         }
 
         // project 짝수들만
